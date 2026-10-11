@@ -39,3 +39,25 @@ attendance-analytics-api/
 ├── REVIEW.md
 ├── DECISIONS.md
 └── .gitignore
+## MongoDB Setup
+
+This project uses MongoDB to store employee and attendance records.
+
+1. Install MongoDB Community Server.
+2. Start the MongoDB service.
+3. Create a `.env` file in the project root.
+4. Add the following configuration:
+
+   MONGO_URL=mongodb://localhost:27017/
+
+5. Install dependencies:
+
+   pip install -r requirements.txt
+
+6. Start the API:
+
+   python -m uvicorn app.main:app --reload
+
+7. Open the API documentation at:
+
+   http://127.0.0.1:8000/docs
